@@ -184,8 +184,36 @@ Response JSON message example:
 
 workers_hashrate
 -----------
+Display workers statistics every 5 min step
 
+Request JSON message:
+```
+{"method":"workers_hashrate"}
+```
 
+Response JSON message example:
+```
+{
+	"result": true,
+	"data": [{
+		"time": "2022-04-06T02:35:00",
+		"hashrate": 0,
+		"shareValidCount": 0,
+		"shareInvalidCount": 0,
+		"blockCount": 0,
+		"workerCount": 0
+	}
+        ...
+	{
+		"time": "2022-04-06T08:35:00",
+		"hashrate": 0,
+		"shareValidCount": 0,
+		"shareInvalidCount": 0,
+		"blockCount": 0,
+		"workerCount": 0
+	}]
+}
+```
 
 workers_list
 -----------
