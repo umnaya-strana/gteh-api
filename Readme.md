@@ -156,11 +156,122 @@ miningUniq - identificator of mining configuration (you can get it from mining_l
 
 workers_summary
 -----------
+
+Display summary information about workers, grouped by coins
+
+Request JSON message:
+
+```
+{"method":"workers_summary"}
+```
+
+Response JSON message example:
+```
+{
+	"result": true,
+	"data": [{
+		"coin": "ETP",
+		"coinName": "Metaverse",
+		"coinAlgo": "ETHASH",
+		"coinIconUrl": "http://comining.io/img/etp.png",
+		"workers": "21",
+		"workersOffline": "0",
+		"workersHashrate": "5152098449",
+		"accountLuck":"29%"
+	}]
+}
+```
+
 workers_hashrate
 -----------
+
+
+
 workers_list
 -----------
+Display all workers for your account, registered on the pool
+
+Request JSON message:
+```
+{"method":"workers_list"}
+```
+
+Response JSON message example:
+```
+{
+	"result": true,
+	"data": [{
+		"uniq": "WORKER_UNIQ_1",
+		"name": "miner20",
+		"description": "sapp gig",
+		"status": false,
+		"sharesValid1h": 0,
+		"sharesInvalid1h": 0,
+		"logins24h": 0,
+		"loginLast": "2018-03-31T16:42:24",
+		"updated": "2018-03-31T17:22:19",
+		"hashrate": 256822820,
+		"coin": "ETP",
+		"coinIconUrl": "http://comining.io/img/etp.png",
+		"coinAlgo": "ETHASH",
+		"mining": "ETP / 5G / PPLNT",
+		"miningUniq": "MINING_UNIQ_1"
+	}
+        ...
+	{
+		"uniq": "WORKER_UNIQ_2",
+		"name": "miner19",
+		"description": "gig",
+		"status": false,
+		"sharesValid1h": 0,
+		"sharesInvalid1h": 0,
+		"logins24h": 0,
+		"loginLast": "2018-03-30T15:58:57",
+		"updated": "2018-03-31T17:23:05",
+		"hashrate": 298009065,
+		"coin": "ETP",
+		"coinIconUrl": "http://comining.io/img/etp.png",
+		"coinAlgo": "ETHASH",
+		"mining": "ETP / 5G / PPLNT",
+		"miningUniq": "MINING_UNIQ_2"
+	}]
+}
+```
+
+uniq - unique worker identificator on pool
+miningUniq - identificator of mining configuration (you can get it from mining_list)
+
+Example:
+```
+curl -d '{"method":"workers_list"}' -H 'Content-Type: application/json' -X POST 'https://api.comining.io/?key=YOUR_KEY'
+```
+
 mining_list
 -----------
-change_mining
------------
+Display all mininig configurations, availble on the pool.
+
+Request JSON message:
+```
+{"method":"mining_list"}
+```
+
+Response JSON message example:
+```
+{
+	"result": true,
+	"data": [{
+		"uniq": "MSPzcL8yuKEyE6zKhoFp4Vy",
+		"mining": "AKA / 10G / SOLO",
+		"coin": "AKA",
+		"coinIconUrl": "http://comining.io/img/aka.png"
+	},
+        .....
+	{
+		"uniq": "MJDAcdzRpqBMPUYtWJSavAZ",
+		"mining": "AKA / 5G / PPLNT",
+		"coin": "AKA",
+		"coinIconUrl": "http://comining.io/img/aka.png"
+	}]
+}
+```
+uniq - identificator of mining configuration
