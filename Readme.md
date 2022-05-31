@@ -138,7 +138,7 @@ Response JSON message example:
 		"blockNumber": 305159,
 		"nonce": "0xe0efad403c5715eb",
 		"coin": "ETI",
-		"coinIconUrl": "http://comining.io/img/eti.png",
+		"coinIconUrl": "hhttps://smartcountry.group/img/eti.png",
 		"mining": "ETI / 10G / SOLO",
 		"miningUniq": "MINING_UNIQ",
 		"status": "Submitted",
@@ -173,7 +173,7 @@ Response JSON message example:
 		"coin": "ETP",
 		"coinName": "Metaverse",
 		"coinAlgo": "ETHASH",
-		"coinIconUrl": "http://comining.io/img/etp.png",
+		"coinIconUrl": "https://smartcountry.group/img/etp.png",
 		"workers": "21",
 		"workersOffline": "0",
 		"workersHashrate": "5152098449",
@@ -212,7 +212,7 @@ Response JSON message example:
 		"updated": "2018-03-31T17:22:19",
 		"hashrate": 256822820,
 		"coin": "ETP",
-		"coinIconUrl": "http://comining.io/img/etp.png",
+		"coinIconUrl": "https://smartcountry.group/img/etp.png",
 		"coinAlgo": "ETHASH",
 		"mining": "ETP / 5G / PPLNT",
 		"miningUniq": "MINING_UNIQ_1"
@@ -230,7 +230,7 @@ Response JSON message example:
 		"updated": "2018-03-31T17:23:05",
 		"hashrate": 298009065,
 		"coin": "ETP",
-		"coinIconUrl": "http://comining.io/img/etp.png",
+		"coinIconUrl": "https://smartcountry.group/img/etp.png",
 		"coinAlgo": "ETHASH",
 		"mining": "ETP / 5G / PPLNT",
 		"miningUniq": "MINING_UNIQ_2"
@@ -243,7 +243,7 @@ miningUniq - identificator of mining configuration (you can get it from mining_l
 
 Example:
 ```
-curl -d '{"method":"workers_list"}' -H 'Content-Type: application/json' -X POST 'https://api.comining.io/?key=YOUR_KEY'
+curl -d '{"method":"workers_list"}' -H 'Content-Type: application/json' -X POST 'https://api.smartcountry.group/?key=YOUR_KEY'
 ```
 
 mining_list
@@ -263,14 +263,14 @@ Response JSON message example:
 		"uniq": "MSPzcL8yuKEyE6zKhoFp4Vy",
 		"mining": "AKA / 10G / SOLO",
 		"coin": "AKA",
-		"coinIconUrl": "http://comining.io/img/aka.png"
+		"coinIconUrl": "https://smartcountry.group/img/aka.png"
 	},
         .....
 	{
 		"uniq": "MJDAcdzRpqBMPUYtWJSavAZ",
 		"mining": "AKA / 5G / PPLNT",
 		"coin": "AKA",
-		"coinIconUrl": "http://comining.io/img/aka.png"
+		"coinIconUrl": "https://smartcountry.group/img/aka.png"
 	}]
 }
 ```
