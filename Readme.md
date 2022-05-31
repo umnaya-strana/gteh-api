@@ -59,33 +59,50 @@ Response JSON message example:
 		"networkDifficulty": "14701000000",
 		"networkHashrate": "117000000000",
 		"baseReward": "2.0",
-		"priceBtc": "9718",
-		"priceUsd": "0.688",
-		"blockRevenueUsd": "4000.9",
+		"priceBtc": "62259",
+		"priceUsd": "2000.0",
+		"blockRevenueUsd": "4000.0",
 		"profit": {
 			"hashrate": 1000000000,
 			"minutes": 1440,
-			"coins":38.1,
-			"revenue_usd":23.42
+			"coins":0.71,
+			"revenue_usd":1420.0
 		},
 		"workers": {
-			"workers_solo": 11,
-			"hashrate_solo": 2330542441,
-			"workers_pplnt": 1,
-			"hashrate_pplnt": 84089713,
-			"workers_grouped": 4,
-			"hashrate_grouped": 450031575
+			"workers_solo": 0,
+			"hashrate_solo": 0,
+			"workers_pplnt": 320,
+			"hashrate_pplnt": 800004089713,
+			"workers_grouped": 0,
+			"hashrate_grouped": 0
 		}
 	}]
 }
 ```
 NOTE Fields workersCount and workersHashrate are deprecated and may be removed
 
-
 coins_reward
+-----------
+
+Return your coins statistics
+
+Request JSON message:
+```
+{"method":"coins_reward"}
+```
+
+Response JSON message example:
+
+
 blocks_list
+-----------
 workers_summary
+-----------
 workers_hashrate
+-----------
 workers_list
+-----------
 mining_list
+-----------
 change_mining
+-----------
