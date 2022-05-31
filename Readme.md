@@ -13,9 +13,9 @@ Request JSON message format:
 ```
 {"method":"[METHOD_NAME]"}
 ```
-All methods descriptions are below
+All methods descriptions are below.
 
-Response JSON format
+Response JSON format:
 
 ```
 {
@@ -25,3 +25,8 @@ Response JSON format
   }
 }
 ```
+
+NOTE Make sure you using valid UserAgent header string in the requests. You may get error 403 from CloudFlare otherwise.
+
+Available Methods
+=======
