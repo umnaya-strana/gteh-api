@@ -92,10 +92,68 @@ Request JSON message:
 ```
 
 Response JSON message example:
+```
+{
+	"result": true,
+	"data": [{
+		"coin": "AKA",
+		"coinIconUrl": "https://smartcountry.group/img/aka.png",
+		"balance": "660139294886",
+		"balanceImmature": "75300651",
+		"reward": "662014671137",
+		"reward24h": "4696017278",
+		"blockCount": "897",
+		"rewards": {
+			"balance_usd": 1508.07740052949,
+			"balance_btc": 16449692,
+			"reward_usd": 1512.36166684046,
+			"reward_btc": 16497040,
+			"immature_usd": 0.172023103151084,
+			"immature_btc": 0,
+			"reward24h_usd": 10.7279745113049,
+			"reward24h_btc": 114632
+		}
+	}]
 
+}
+```
 
 blocks_list
 -----------
+
+Display last blocks, found on the pool.
+
+Request JSON message:
+
+```
+{"method":"blocks_list"}
+```
+
+Response JSON message example:
+```
+{
+	"result": true,
+	"data": [{
+		"id": 300484,
+		"blockNumber": 305159,
+		"nonce": "0xe0efad403c5715eb",
+		"coin": "ETI",
+		"coinIconUrl": "http://comining.io/img/eti.png",
+		"mining": "ETI / 10G / SOLO",
+		"miningUniq": "MINING_UNIQ",
+		"status": "Submitted",
+		"created": "2018-03-31T17:22:58",
+		"worker": "john",
+		"workerUniq": "WORKER_UNIQ"
+	} 
+	...
+	]
+}
+```
+
+workerUniq - unique worker identificator on the pool (you can get it from workers_list)
+miningUniq - identificator of mining configuration (you can get it from mining_list)
+
 workers_summary
 -----------
 workers_hashrate
