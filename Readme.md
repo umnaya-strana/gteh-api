@@ -1,4 +1,4 @@
-Public repo for smartcountry.group
+Public repo for gteh pool
 =======
 
 Api reference
@@ -6,7 +6,7 @@ Api reference
 
 Firstly you need get API KEY from your smartcountry.group account profile.
 
-Request url format is https://api.smartcountry.group/?key=[YOUR_API_KEY]. Use http POST request with JSON body.
+Request url format is https://api.gteh.org/?key=[YOUR_API_KEY]. Use http POST request with JSON body.
 
 Request JSON message format:
 
@@ -49,7 +49,7 @@ Response JSON message example:
 		"id": 1,
 		"coin": "ETH",
 		"description": "Ethereum",
-		"coinIconUrl": "https://smartcountry.group/img/eth.png",
+		"coinIconUrl": "https://geth.org/img/eth.png",
 		"siteUrl": "https://ethereum.org/",
 		"pendingBlockNumber": 14878211,
 		"active": true,
@@ -97,7 +97,7 @@ Response JSON message example:
 	"result": true,
 	"data": [{
 		"coin": "AKA",
-		"coinIconUrl": "https://smartcountry.group/img/aka.png",
+		"coinIconUrl": "https://gteh.org/img/aka.png",
 		"balance": "660139294886",
 		"balanceImmature": "75300651",
 		"reward": "662014671137",
@@ -138,7 +138,7 @@ Response JSON message example:
 		"blockNumber": 305159,
 		"nonce": "0xe0efad403c5715eb",
 		"coin": "ETI",
-		"coinIconUrl": "hhttps://smartcountry.group/img/eti.png",
+		"coinIconUrl": "hhttps://gteh.org/img/eti.png",
 		"mining": "ETI / 10G / SOLO",
 		"miningUniq": "MINING_UNIQ",
 		"status": "Submitted",
@@ -173,7 +173,7 @@ Response JSON message example:
 		"coin": "ETP",
 		"coinName": "Metaverse",
 		"coinAlgo": "ETHASH",
-		"coinIconUrl": "https://smartcountry.group/img/etp.png",
+		"coinIconUrl": "https://gteh.org/img/etp.png",
 		"workers": "21",
 		"workersOffline": "0",
 		"workersHashrate": "5152098449",
@@ -240,7 +240,7 @@ Response JSON message example:
 		"updated": "2022-03-31T17:22:19",
 		"hashrate": 256822820,
 		"coin": "ETP",
-		"coinIconUrl": "https://smartcountry.group/img/etp.png",
+		"coinIconUrl": "https://gteh.org/img/etp.png",
 		"coinAlgo": "ETHASH",
 		"mining": "ETP / 5G / PPLNT",
 		"miningUniq": "MINING_UNIQ_1"
@@ -258,7 +258,7 @@ Response JSON message example:
 		"updated": "2022-03-31T17:23:05",
 		"hashrate": 298009065,
 		"coin": "ETP",
-		"coinIconUrl": "https://smartcountry.group/img/etp.png",
+		"coinIconUrl": "https://gteh.org/img/etp.png",
 		"coinAlgo": "ETHASH",
 		"mining": "ETP / 5G / PPLNT",
 		"miningUniq": "MINING_UNIQ_2"
@@ -271,7 +271,7 @@ miningUniq - identificator of mining configuration (you can get it from mining_l
 
 Example:
 ```
-curl -d '{"method":"workers_list"}' -H 'Content-Type: application/json' -X POST 'https://api.smartcountry.group/?key=YOUR_KEY'
+curl -d '{"method":"workers_list"}' -H 'Content-Type: application/json' -X POST 'https://api.gteh.org/?key=YOUR_KEY'
 ```
 
 mining_list
@@ -291,14 +291,14 @@ Response JSON message example:
 		"uniq": "MSPzcL8yuKEyE6zKhoFp4Vy",
 		"mining": "AKA / 10G / SOLO",
 		"coin": "AKA",
-		"coinIconUrl": "https://smartcountry.group/img/aka.png"
+		"coinIconUrl": "https://gteh.org/img/aka.png"
 	},
         .....
 	{
 		"uniq": "MJDAcdzRpqBMPUYtWJSavAZ",
 		"mining": "AKA / 5G / PPLNT",
 		"coin": "AKA",
-		"coinIconUrl": "https://smartcountry.group/img/aka.png"
+		"coinIconUrl": "https://gteh.org/img/aka.png"
 	}]
 }
 ```
