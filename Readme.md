@@ -4,7 +4,7 @@ Public repo for gteh pool
 Api reference
 =======
 
-Firstly you need get API KEY from your smartcountry.group account profile.
+Firstly you need get API KEY from your gteh.org account profile.
 
 Request url format is https://api.gteh.org/?key=[YOUR_API_KEY]. Use http POST request with JSON body.
 
